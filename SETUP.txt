@@ -1,0 +1,7 @@
+% npm init -y
+% npm install --save-dev webpack
+% npm run build
+
+% npm install babel-core babel-loader webpack-dev-server babel-preset-es2015 babel-polyfil --save-dev
+
+% npm start
