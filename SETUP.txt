@@ -1,20 +1,44 @@
-% npm init -y
-% npm install --save-dev webpack
-% npm run build
+Create simple Webpack application
+---------------------------------
 
-% npm install babel-core babel-loader webpack-dev-server babel-preset-es2015 babel-polyfill --save-dev
+  % npm init -y
+  % npm install --save-dev webpack
+  % npm run build
 
-% npm start
+  % npm install babel-core babel-loader webpack-dev-server babel-preset-es2015 babel-polyfil --save-dev
+
+  % npm start
 
 To install React
 ----------------
 
-% npm install react-dom react babel-preset-react --save-dev
+  % npm install react-dom react babel-preset-react --save-dev
 
-Update package.json:
+  Update package.json:
 
-  "babel": {
-    "presets": [
-      "es2015", "react"
-    ]
-  }
+    "babel": {
+      "presets": [
+        "es2015", "react"
+      ]
+    }
+
+To install ESLint
+-----------------
+
+  % npm install -g eslint eslint-plugin-react
+  % eslint --init
+    ? How would you like to configure ESLint? Answer questions about your style
+    ? Are you using ECMAScript 6 features? Yes
+    ? Are you using ES6 modules? Yes
+    ? Where will your code run? Browser
+    ? Do you use CommonJS? No
+    ? Do you use JSX? Yes
+    ? Do you use React? Yes
+    ? What style of indentation do you use? Spaces
+    ? What quotes do you use for strings? Double
+    ? What line endings do you use? Unix
+    ? Do you require semicolons? Yes
+    ? What format do you want your config file to be in? YAML
+  % Add the following to .eslintrc.yml
+    -console:
+      - 0
